@@ -183,7 +183,7 @@ hr {
     .container {
         display: flex;
         justify-content: flex-start;
-        background-color: violet;
+        
     }
     .container-ver {
         display: flex;

@@ -69,6 +69,10 @@
                     padding: 5%;
                 }
                 
+                .eq-pad-10 {
+                    padding: 10%;
+                }
+                
                 .col-wide
                 /*Text-fonts*/
                 
@@ -116,22 +120,17 @@
                     width: 80%;
                 }
                 
-                @media only screen and (max-width: 455px) {
+                @media only screen and (min-width:320px) {
                     .header {
-                        margin: 0 3% 0;
+                        margin: 3% 3% 3%;
                         width: 94%;
-                        height: auto;
                     }
                     .nav {
                         display: none;
                     }
                     .dropdown {
-                        align-self: center;
-                        display: flex;
-                        justify-content: flex-end;
-                        font-size: initial;
-                        width: auto;
-                        height: auto;
+                        position: relative;
+                        display: inline-block;
                     }
                     .dropbutton {
                         margin-right: 20px;
@@ -140,9 +139,31 @@
                         border-radius: 10px;
                         border-width: 0.5px;
                         position: relative;
+                        width: 4rem;
                     }
-                    .dropbutton:hover {
-                        background-color: rgba(245, 245, 245, 0.5);
+                    .dropdown-content {
+                        display: none;
+                        position: absolute;
+                        width: inherit;
+                        width: auto;
+                    }
+                    .dropdown-ele {
+                        border-radius: 10px;
+                    }
+                    .dropdown a {
+                        background-color: rgba(212, 0, 0, 0.199);
+                        display: block;
+                    }
+                    .dropdown-content a:hover {
+                        background-color: rgba(212, 0, 0, 0.199);
+                        transition: 0.9s;
+                    }
+                    .dropdown:hover .dropdown-content {
+                        display: block;
+                    }
+                    .dropdown:hover .dropbutton {
+                        background-color: rgba(212, 0, 0, 0.199);
+                        transition: 0.9s;
                     }
                     .ele {
                         padding: 3px;
@@ -151,12 +172,11 @@
                     .flip {
                         background-color: transparent;
                         display: flex;
-                        align-self: center;
-                        width: 250px;
-                        height: 250px;
+                        justify-content: flex-end;
+                        width: 150px;
+                        height: 150px;
                         perspective: 1000px;
-                        margin: 0 2% 0;
-                        margin-left: 5%;
+                        margin: 0;
                     }
                     .flip-area {
                         position: relative;
@@ -183,9 +203,9 @@
                         align-items: center;
                         justify-content: center;
                         transform: rotateY(180deg);
-                        border-radius: 95px;
+                        border-radius: 55px;
                         border-top-left-radius: 10px;
-                        box-shadow: 8px 4px rgba(0, 5, 0, 4.2);
+                        box-shadow: 4px 5px rgba(0, 5, 0, 4.2);
                     }
                     .front-flip,
                     .img {
@@ -220,7 +240,7 @@
                         flex-wrap: wrap;
                         justify-content: center;
                     }
-                    .container>div {
+                    .container div {
                         justify-self: flex-start;
                     }
                     .block {
@@ -236,7 +256,7 @@
                     }
                 }
                 
-                @media only screen and (min-width: 720px) {
+                @media only screen and (min-width: 500px) {
                     /*-------------------------*/
                     .header {
                         width: 100%;

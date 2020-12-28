@@ -5,6 +5,15 @@
                     color: white;
                     animation: gradient 15s ease infinite;
                 }
+                /*margins*/
+                
+                .mar2up {
+                    margin-top: 2rem;
+                }
+                
+                .mar2down {
+                    margin-bottom: 2rem;
+                }
                 
                 .active {
                     background-color: rgba(255, 255, 255, 0.185);

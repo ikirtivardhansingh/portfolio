@@ -17,19 +17,21 @@
     </div>
 
     <div>
-        <div class=" nav poptxt">
-            <a class="ele txt1-2 " href="./index.html">Home</a>
-            <a class="ele txt1-2 active" href="./articles.html">Articles</a>
-            <a class="ele txt1-2 " href="resume.html">Resume</a>
-            <a class="ele txt1-2 " href="project.html">Projects</a>
-        </div>
-        <div class=" dropdown right popin2" style="float: right; right: 10px;">
-            <button class=" dropbutton txt1-2">Menu</button>
-            <div class="dropdown-content">
-                <a class="ele active txt1" href="index.html">Home</a>
-                <a class="ele dropdown-ele txt1" href="./articles.html">Articles</a>
-                <a class="ele dropdown-ele txt1" href="404.html">Resume</a>
-                <a class="ele dropdown-ele txt1" href="projects.html">Projects</a>
+        <div class="navbar">
+            <div class=" nav poptxt ">
+                <a class="ele txt1-2" href="index.html">Home</a>
+                <a class="ele active txt1-2" href="./articles.html">Articles</a>
+                <a class="ele txt1-2" href="https://drive.google.com/file/d/1zwj0on6v8R0vbLM0RGjw1i5o-qM672Hd/view?usp=sharing" target="_blank">Resume</a>
+                <a class="ele txt1-2" href="projects.html">Projects</a>
+            </div>
+            <div class=" dropdown right popin2" style="float: right; right: 10px;">
+                <button class=" dropbutton txt1-2">Menu</button>
+                <div class="dropdown-content">
+                    <a class="ele  txt1" href="index.html">Home</a>
+                    <a class="ele active dropdown-ele txt1" href="./articles.html">Articles</a>
+                    <a class="ele dropdown-ele txt1" href="https://drive.google.com/file/d/1zwj0on6v8R0vbLM0RGjw1i5o-qM672Hd/view?usp=sharing">Resume</a>
+                    <a class="ele dropdown-ele txt1" href="projects.html">Projects</a>
+                </div>
             </div>
         </div>
         <center>
@@ -72,18 +74,19 @@
                     </p3>
                 </div>
             </div>
-            <br><br>
+            <br><br></div>
+        <div class="container-ver ">
             <form name="Feedback" method="POST" data-netlify="true">
                 <b><p>Feedback</p></b>
 
                 <p>
-                    <label>Your Name: <input type="text" name="name" /></label>
+                    <label>Your Name: <input type="text" name="name" required/></label>
                 </p>
                 <p>
-                    <label>Your Email: <input type="email" name="email" /></label>
+                    <label>Your Email: <input type="email" name="email" required/></label>
                 </p>
                 <p>
-                    <label>Message: <textarea name="message"></textarea></label>
+                    <label>Message: <textarea name="message" required></textarea></label>
                 </p>
                 <p>
                     <br>Don't Forget to give stars!!<br>
@@ -97,9 +100,10 @@
                 </p>
             </form>
         </div>
-        <div class="footer">
+    </div>
+    <div class="footer">
 
-        </div>
+    </div>
 </body>
 
 </html>

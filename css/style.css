@@ -352,7 +352,7 @@ button {
     display: flex;
     justify-content: flex-end;
     align-content: center;
-    width: 100%;
+    margin-left: 10%px;
   }
   .ele {
     display: ruby-text-container;

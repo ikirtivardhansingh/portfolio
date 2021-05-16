@@ -1,6 +1,6 @@
 body {
   padding: 0;
-  margin: 0;
+  margin: 0  5% 0 5%;
   background: linear-gradient(to right, rgb(11, 0, 75), rgb(138, 2, 2));
   color: white;
   animation: gradient 15s ease infinite;
@@ -70,6 +70,11 @@ a {
   transition-property: initial;
   padding: 0 10px 0;
 }
+
+.card {
+  margin-right: 10%;
+}
+
 /*colors*/
 
 .black {
@@ -82,7 +87,7 @@ a {
 /*column widths*/
 
 .col-wide-80 {
-  width: 80%;
+  width: 130%;
   align-self: center;
 }
 
@@ -115,7 +120,7 @@ a {
 }
 
 .eq-pad-10 {
-  padding: 10%;
+  padding: 10% 10% 10% 10%;
 }
 /*All side Margin*/
 
@@ -186,7 +191,7 @@ p3 {
 hr {
   border: 2px solid rgba(235, 165, 165, 0.76);
   border-radius: 20px;
-  width: 80%;
+  width: 100%;
 }
 
 input,
@@ -198,8 +203,7 @@ button {
 
 @media only screen and (min-width: 320px) {
   .header {
-    margin: 3% 3% 3%;
-    width: 94%;
+    margin: 3% 0 3% 0;
   }
   .nav {
     display: none;
@@ -301,7 +305,6 @@ button {
     text-decoration: none;
   }
   .content {
-    width: 100%;
     height: auto;
   }
   .container {
@@ -332,8 +335,443 @@ button {
   }
 }
 
-@media only screen and (min-width: 500px) {
-  /*-------------------------*/
+@media (max-width: 512px) and (min-width: 500px){
+  .header {
+    height: 100px;
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+  }
+  .intro {
+    padding: 3% 8% 3% 3%;
+    width: 65%;
+  }
+  .contact {
+    align-self: center;
+    font-size: 15px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+
+  .navbar{
+    margin-bottom: 6%;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    width: 100%;
+    margin-top: 19%;
+  }
+  .ele {
+    display: ruby-text-container;
+    padding: 3px;
+    margin: 5 px;
+  }
+  .ele:hover {
+    color: rgb(0, 8, 124);
+    background-color: tomato;
+    transition: 0.7s;
+    border-radius: 4px;
+  }
+  .dropdown {
+    display: none;
+  }
+  .weight300 {
+    font-weight: 300;
+  }
+  .card {
+    width: auto;
+  }
+  .flip {
+    background-color: transparent;
+    width: 115px;
+    height: 115px;
+    perspective: 1000px;
+  }
+  .flip-area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.9s;
+    transform-style: preserve-3d;
+  }
+  .flip:hover .flip-area {
+    transform: rotateY(180deg);
+  }
+  .front-flip,
+  .back-flip {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .back-flip {
+    background-color: rgb(230, 171, 63);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+    border-radius: 95px;
+    border-top-left-radius: 10px;
+    box-shadow: 8px 4px rgba(0, 5, 0, 4.2);
+  }
+  .front-flip,
+  .img {
+    height: auto;
+    border-radius: 95px;
+    border-top-left-radius: 10px;
+    box-shadow: 8px 4px rgba(0, 5, 0, 4.2);
+  }
+  .content {
+    height: auto;
+  }
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 3em;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 10%;
+  }
+
+  .containerp {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 3em;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 25%;
+  }
+
+  .flip.side-pad-2{
+    margin-top: -150%;
+  }
+
+  .container-ver {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .container div {
+    justify-self: flex-start;
+    margin-top: 20%;
+    margin-bottom: 5%;
+  }
+  .block {
+    background-color: rgba(255, 255, 255, 0.774);
+    border-radius: 20px;
+    vertical-align: 50%;
+  }
+  .para {
+    padding: 20px;
+  }
+
+  .p1{
+    margin: 10% 5% 5% 5%;
+  }
+}
+
+@media (max-width: 695px) and (min-width:513px ){
+  .header {
+    height: 100px;
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .intro {
+    padding: 3% 8% 3% 3%;
+    width: 65%;
+  }
+  .contact {
+    align-self: center;
+    font-size: 15px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+
+  .navbar{
+    margin-top: 5%;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    width: 100%;
+    margin-top: 19%;
+  }
+  .ele {
+    display: ruby-text-container;
+    padding: 3px;
+    margin: 5 px;
+  }
+  .ele:hover {
+    color: rgb(0, 8, 124);
+    background-color: tomato;
+    transition: 0.7s;
+    border-radius: 4px;
+  }
+  .dropdown {
+    display: none;
+  }
+  .weight300 {
+    font-weight: 300;
+  }
+  .card {
+    width: auto;
+  }
+  .flip {
+    background-color: transparent;
+    width: 115px;
+    height: 115px;
+    perspective: 1000px;
+  }
+  .flip-area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.9s;
+    transform-style: preserve-3d;
+  }
+  .flip:hover .flip-area {
+    transform: rotateY(180deg);
+  }
+  .front-flip,
+  .back-flip {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .back-flip {
+    background-color: rgb(230, 171, 63);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+    border-radius: 95px;
+    border-top-left-radius: 10px;
+    box-shadow: 8px 4px rgba(0, 5, 0, 4.2);
+  }
+  .front-flip,
+  .img {
+    height: auto;
+    border-radius: 95px;
+    border-top-left-radius: 10px;
+    box-shadow: 8px 4px rgba(0, 5, 0, 4.2);
+  }
+  .content {
+    height: auto;
+  }
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 3em;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: -10%;
+  }
+
+  .containerp {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 3em;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 25%;
+    padding-top: 10%;
+  }
+
+  .navbarp {  
+    margin-top: 17%;
+}
+
+  .flip.side-pad-2{
+    margin-top: -150%;
+  }
+
+  .container-ver {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .container div {
+    justify-self: flex-start;
+    margin-top: 20%;
+    margin-bottom: 5%;
+  }
+  .block {
+    background-color: rgba(255, 255, 255, 0.774);
+    border-radius: 20px;
+    vertical-align: 50%;
+  }
+  .para {
+    padding: 20px;
+  }
+
+  .p1{
+    margin: 10% 5% 5% 5%;
+  }
+}
+
+/*------ Mobile ------*/
+@media (max-width: 766px) and (min-width: 696px){
+  .header {
+    height: 150px;
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .intro {
+    padding: 3% 8% 3% 3%;
+    width: 65%;
+  }
+  .contact {
+    align-self: center;
+    font-size: 15px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+
+  .navbar{
+    margin-top: 5%;
+    margin-bottom: 6%;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    width: 100%;
+  }
+  .ele {
+    display: ruby-text-container;
+    padding: 3px;
+    margin: 5 px;
+  }
+  .ele:hover {
+    color: rgb(0, 8, 124);
+    background-color: tomato;
+    transition: 0.7s;
+    border-radius: 4px;
+  }
+  .dropdown {
+    display: none;
+  }
+  .weight300 {
+    font-weight: 300;
+  }
+  .card {
+    width: auto;
+  }
+  .flip {
+    background-color: transparent;
+    width: 180px;
+    height: 180px;
+    perspective: 1000px;
+  }
+  .flip-area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.9s;
+    transform-style: preserve-3d;
+  }
+  .flip:hover .flip-area {
+    transform: rotateY(180deg);
+  }
+  .front-flip,
+  .back-flip {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .back-flip {
+    background-color: rgb(230, 171, 63);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+    border-radius: 95px;
+    border-top-left-radius: 10px;
+    box-shadow: 8px 4px rgba(0, 5, 0, 4.2);
+  }
+  .front-flip,
+  .img {
+    width: 210px;
+    height: auto;
+    border-radius: 95px;
+    border-top-left-radius: 10px;
+    box-shadow: 8px 4px rgba(0, 5, 0, 4.2);
+  }
+  .content {
+    height: auto;
+  }
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 3em;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: -10%;
+  }
+
+  .containerp {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 3em;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 25%;
+    padding-top: 10%;
+  }
+
+  .flip.side-pad-2{
+    margin-top: -100%;
+  }
+
+  .container-ver {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .container div {
+    justify-self: flex-start;
+    margin-top: 20%;
+    margin-bottom: 5%;
+  }
+  .block {
+    background-color: rgba(255, 255, 255, 0.774);
+    border-radius: 20px;
+    vertical-align: 50%;
+  }
+  .para {
+    padding: 20px;
+  }
+
+  .p1{
+    margin: 10% 5% 5% 5%;
+  }
+}
+
+@media (min-width: 767px) {
   .header {
     height: 200px;
     justify-content: flex-start;
@@ -341,18 +779,21 @@ button {
     flex-wrap: wrap;
   }
   .intro {
-    padding: 3%;
+    padding: 3% 8% 3% 3%;
     width: 65%;
   }
   .contact {
     align-self: center;
     font-size: 15px;
+    margin-top: 4%;
+    margin-bottom: 4%;
   }
+
   .nav {
     display: flex;
     justify-content: flex-end;
     align-content: center;
-    margin-left: 10%px;
+    width: 100%;
   }
   .ele {
     display: ruby-text-container;
@@ -379,8 +820,6 @@ button {
     width: 250px;
     height: 250px;
     perspective: 1000px;
-    margin: 0 2% 0;
-    margin-left: 5%;
   }
   .flip-area {
     position: relative;
@@ -420,7 +859,6 @@ button {
     box-shadow: 8px 4px rgba(0, 5, 0, 4.2);
   }
   .content {
-    width: 100%;
     height: auto;
   }
   .container {
@@ -446,5 +884,15 @@ button {
   }
   .para {
     padding: 20px;
+  }
+
+  .p1{
+    margin: 10% 5% 5% 5%;
+  }
+}
+
+@media (min-width: 768px) and (max-width:922px){
+  .containerp{
+    padding-top: 10%;
   }
 }
